@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>基本情報技術者試験</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3B82F6", // Medium Blue from prompt (adjusted for better harmony)
+              "primary-dark": "#1E3A8A", // Dark Blue from prompt
+              "background-light": "#FFFFFF", // White from prompt
+              "background-subtle": "#EFF6FF", // Light Blue from prompt
+              "text-body": "#1F2937", // Dark Gray from prompt (adjusted for better contrast)
+              "text-muted": "#6B7280",
+              "border-color": "#D1D5DB",
+            },
+            fontFamily: {
+              "display": ["Noto Sans JP", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light font-display text-text-body">
+<div class="relative flex min-h-screen w-full flex-col bg-gradient-to-b from-blue-50 via-white to-white">
+<div class="absolute inset-0 z-0 opacity-20">
+<div class="absolute -top-60 -left-60 h-[40rem] w-[40rem] rounded-full bg-blue-300/50 blur-3xl"></div>
+<div class="absolute -bottom-80 -right-40 h-[40rem] w-[50rem] rounded-full bg-blue-200/50 blur-3xl"></div>
+</div>
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border-color/50">
+<div class="container mx-auto px-4">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-4 text-primary-dark">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 17.25l6-5.25-6-5.25v10.5z" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M15 12H3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h2 class="text-primary-dark text-lg font-bold">基本情報技術者試験</h2>
+</div>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-text-body text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">試験詳細</a>
+<a class="text-text-body text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">合格者インタビュー</a>
+<a class="text-text-body text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">よくある質問</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary-dark text-white text-sm font-bold tracking-wide shadow-lg shadow-blue-900/20 hover:bg-primary-dark/90 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
+<span class="truncate">申し込む</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow z-10">
+<section class="py-20 md:py-32">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+<div class="flex flex-col gap-6 text-left">
+<h1 class="text-primary-dark text-4xl font-black leading-tight tracking-tighter md:text-6xl">
+                            ITの未来を切り拓く<br/>基本情報技術者試験
+                        </h1>
+<p class="text-text-muted text-base font-normal leading-relaxed md:text-lg max-w-xl">
+                            基礎的なIT知識を証明し、成功するテクノロジーキャリアへの第一歩を踏み出しましょう。
+                        </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary text-white text-base font-bold tracking-wide shadow-lg shadow-blue-500/30 hover:bg-primary/90 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
+<span class="truncate">今すぐ申し込む</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-blue-100 text-primary-dark text-base font-bold tracking-wide hover:bg-blue-200/80 transition-all duration-300 hover:-translate-y-0.5">
+<span class="truncate">シラバスを見る</span>
+</button>
+</div>
+</div>
+<div class="w-full">
+<img class="rounded-xl object-cover shadow-2xl shadow-blue-200/50" data-alt="A modern office setting with people collaborating around a table with laptops." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtedhLu7jId4FK__NVxSARMd4OWN1kB1rm0ai_2vV3Td_-bSXvd2FJl7DmV40G-8_lsCiz5Ps0ejbiWNKYUR54EqJxlMOBgOMu6mGepLqHCELR9DkM6HOMBMDsoYXHCiPdaZaKbFIWW8JrGUOFtrCxMHE2eQnOCG0H9D7mhMpb6mzNzxYlZuZC-hOgptt4LQq3AYqbAH8fowPfyqk4mtWYdY8BTD5uf-JwbRvXgX-lXXHPiBVDaDHDVUQBgWXm9sSLGLpW4fT_Q1kh"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24">
+<div class="container mx-auto px-4">
+<div class="mx-auto max-w-3xl text-center mb-12">
+<h2 class="text-primary-dark text-3xl font-bold tracking-tight md:text-4xl">資格取得のメリット</h2>
+<p class="mt-4 text-text-muted text-lg">基本情報技術者試験の資格を取得することは、あなたのキャリアに多岐にわたる具体的な利点をもたらします。</p>
+</div>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col gap-4 rounded-xl border border-border-color/50 bg-white/60 p-6 shadow-lg shadow-blue-100/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<span class="material-symbols-outlined text-4xl text-primary">menu_book</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-primary-dark text-lg font-bold">IT基礎知識の体系的習得</h3>
+<p class="text-text-muted text-sm">テクノロジー、マネジメント、ストラテジの全般にわたる知識を網羅的に学び、ITの全体像を理解できます。</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-border-color/50 bg-white/60 p-6 shadow-lg shadow-blue-100/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<span class="material-symbols-outlined text-4xl text-primary">work</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-primary-dark text-lg font-bold">就職・転職に有利</h3>
+<p class="text-text-muted text-sm">IT業界への就職や転職活動において、基礎的な知識とスキルを持つことの客観的な証明となり、高く評価されます。</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-border-color/50 bg-white/60 p-6 shadow-lg shadow-blue-100/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<span class="material-symbols-outlined text-4xl text-primary">trending_up</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-primary-dark text-lg font-bold">キャリアアップの土台</h3>
+<p class="text-text-muted text-sm">応用情報技術者試験など、より高度な資格への足がかりとなり、将来のキャリアパスを広げる強固な基盤を築きます。</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-border-color/50 bg-white/60 p-6 shadow-lg shadow-blue-100/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<span class="material-symbols-outlined text-4xl text-primary">verified_user</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-primary-dark text-lg font-bold">国家資格としての信頼性</h3>
+<p class="text-text-muted text-sm">国が認める資格であるため、その知識と能力は社会的に高い信頼性を持ち、顧客や取引先からの信用獲得に繋がります。</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-border-color/50 bg-white/60 p-6 shadow-lg shadow-blue-100/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<span class="material-symbols-outlined text-4xl text-primary">groups</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-primary-dark text-lg font-bold">業務理解の促進</h3>
+<p class="text-text-muted text-sm">ITの共通言語を習得することで、エンジニアや他部署の専門家とのコミュニケーションが円滑になり、業務効率が向上します。</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-border-color/50 bg-white/60 p-6 shadow-lg shadow-blue-100/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+<span class="material-symbols-outlined text-4xl text-primary">psychology</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-primary-dark text-lg font-bold">論理的思考力・問題解決能力</h3>
+<p class="text-text-muted text-sm">アルゴリズムやプログラミングの学習を通じて、論理的思考力と問題解決能力が自然と養われます。</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-border-color/50 bg-white/60 p-6 shadow-lg shadow-blue-100/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl md:col-start-2 lg:col-start-auto">
+<span class="material-symbols-outlined text-4xl text-primary">military_tech</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-primary-dark text-lg font-bold">自信の獲得</h3>
+<p class="text-text-muted text-sm">難関国家資格の取得という成功体験が、自身のスキルに対する大きな自信となり、さらなる挑戦への意欲を高めます。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24">
+<div class="container mx-auto px-4">
+<div class="mx-auto max-w-3xl text-center mb-12">
+<h2 class="text-primary-dark text-3xl font-bold tracking-tight md:text-4xl">試験の詳細</h2>
+<p class="mt-4 text-text-muted text-lg">効果的に準備するために、試験の構成、対象者、内容を理解しましょう。</p>
+</div>
+<div class="mx-auto max-w-4xl">
+<div class="border-b border-border-color flex justify-center gap-4 md:gap-8">
+<button class="flex-1 whitespace-nowrap border-b-[3px] border-primary pb-3 pt-2 text-center text-sm font-bold text-primary-dark md:flex-none md:px-4">試験概要</button>
+<button class="flex-1 whitespace-nowrap border-b-[3px] border-transparent pb-3 pt-2 text-center text-sm font-bold text-text-muted hover:text-primary-dark transition-colors md:flex-none md:px-4">対象者</button>
+<button class="flex-1 whitespace-nowrap border-b-[3px] border-transparent pb-3 pt-2 text-center text-sm font-bold text-text-muted hover:text-primary-dark transition-colors md:flex-none md:px-4">試験形式</button>
+</div>
+<div class="py-8 text-text-body leading-relaxed">
+<p>基本情報技術者試験（FE）は、ITプロフェッショナルに求められる基本的な知識とスキルを証明する国家資格です。コンピュータ科学の基礎、システムアーキテクチャ、ネットワーク技術、セキュリティ、プロジェクトマネジメントなど、幅広いトピックをカバーしています。この試験はIT能力の基準として機能し、業界で高く評価されており、より高度な資格や専門的なキャリアパスへの登竜門となっています。</p>
+<ul class="mt-6 space-y-3">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-lg text-primary">check_circle</span><strong>目的:</strong> ITの基礎知識とスキルを証明するため。</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-lg text-primary">check_circle</span><strong>重要性:</strong> 雇用可能性を高める国家的に認知された資格。</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined mt-0.5 text-lg text-primary">check_circle</span><strong>範囲:</strong> 必要不可欠なIT領域を幅広くカバー。</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24">
+<div class="container mx-auto px-4">
+<div class="mx-auto max-w-3xl text-center mb-16">
+<h2 class="text-primary-dark text-3xl font-bold tracking-tight md:text-4xl">推奨される学習方法</h2>
+<p class="mt-4 text-text-muted text-lg">推奨される学習計画に従って、FE資格の取得を目指しましょう。</p>
+</div>
+<div class="relative mx-auto max-w-2xl">
+<div aria-hidden="true" class="absolute left-1/2 top-0 -ml-0.5 h-full w-1 bg-blue-100 rounded-full"></div>
+<div class="relative space-y-16">
+<div class="relative flex items-center">
+<div class="absolute left-1/2 -ml-5 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white font-bold text-lg shadow-md">1</div>
+<div class="w-1/2 pr-12">
+<div class="bg-white p-6 rounded-xl shadow-lg border border-blue-100 text-right">
+<h3 class="font-bold text-primary-dark text-lg">1-2ヶ月目: 基礎の習得</h3>
+<p class="text-text-muted text-sm mt-2">公式シラバスを確認し、推奨教科書を使用して、すべての知識分野にわたる強力な理論的基盤を築きます。</p>
+</div>
+</div>
+<div class="w-1/2 pl-12"></div>
+</div>
+<div class="relative flex items-center">
+<div class="absolute left-1/2 -ml-5 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white font-bold text-lg shadow-md">2</div>
+<div class="w-1/2 pr-12"></div>
+<div class="w-1/2 pl-12">
+<div class="bg-white p-6 rounded-xl shadow-lg border border-blue-100 text-left">
+<h3 class="font-bold text-primary-dark text-lg">3ヶ月目: 実践と応用</h3>
+<p class="text-text-muted text-sm mt-2">過去の試験問題を解き、模擬試験を受けて弱点を特定し、問題形式と時間配分に慣れます。</p>
+</div>
+</div>
+</div>
+<div class="relative flex items-center">
+<div class="absolute left-1/2 -ml-5 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white font-bold text-lg shadow-md">3</div>
+<div class="w-1/2 pr-12">
+<div class="bg-white p-6 rounded-xl shadow-lg border border-blue-100 text-right">
+<h3 class="font-bold text-primary-dark text-lg">最終週: 復習と登録</h3>
+<p class="text-text-muted text-sm mt-2">主要な概念、公式、用語の最終確認を行います。登録が完了していることを確認し、試験日に備えます。</p>
+</div>
+</div>
+<div class="w-1/2 pl-12"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-background-subtle py-16 md:py-24">
+<div class="container mx-auto px-4">
+<div class="mx-auto max-w-3xl text-center mb-12">
+<h2 class="text-primary-dark text-3xl font-bold tracking-tight md:text-4xl">合格者インタビュー</h2>
+<p class="mt-4 text-text-muted text-lg">未経験からの一発合格！中井 兵馬さんが語る、合格までの道のりと学習の秘訣。</p>
+</div>
+<div class="mx-auto max-w-4xl rounded-xl border border-border-color/50 bg-white/60 p-8 shadow-lg shadow-blue-100/50 backdrop-blur-sm">
+<div class="flex flex-col items-center gap-8 md:flex-row">
+<img alt="中井 兵馬さんの顔写真" class="h-40 w-40 rounded-full object-cover shadow-md border-4 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbm6pg24kPVtsKeRK1oFBGOINZvBzHQ6LfDrjXLJ8f3ZN2ymL7XXPrKeU2PEmJbZBYOrC4ks6fTkv97KRqvEF-NaCMe8iQbXAzCVLgFMou7izV8aiuRh1di2NEQrq61tdJL0Yqy7-fdQh_ys5QyaLZqSlG2dmpVlNWZDCOrLNqyanMEE_NKWMlj2x6hbfPCqAbVei5j_QMK0afLr8oEyQzb-q1sIF1oHcIitmMwpXqrYo6dXpLuWowjVo2LJgkSd29rtAKqH8g0eX3"/>
+<div class="text-center md:text-left">
+<h3 class="text-primary-dark text-2xl font-bold">中井 兵馬さん</h3>
+<p class="mt-1 text-text-muted">IT企業勤務・26歳</p>
+<p class="mt-4 text-text-body">「ITの知識はほぼゼロからのスタートでした。しかし、正しい学習法とモチベーション維持の工夫で、一発合格することができました。この経験が、同じ目標を持つ方々の助けになれば嬉しいです。」</p>
+</div>
+</div>
+<div class="mt-12 space-y-8">
+<div>
+<h4 class="flex items-center gap-3 text-lg font-bold text-primary-dark"><span class="material-symbols-outlined text-primary">lightbulb</span>具体的な学習方法</h4>
+<div class="mt-4 space-y-4 pl-8 border-l-2 border-primary/20">
+<div class="relative pl-4">
+<span class="absolute -left-2.5 top-1 h-2 w-2 rounded-full bg-primary"></span>
+<h5 class="font-bold text-text-body">参考書と過去問演習</h5>
+<p class="text-text-muted text-sm">「まずは評価の高い参考書を1冊選び、全体像を把握することから始めました。その後はひたすら過去問を解き、解説を読んで理解を深めるサイクルを繰り返しました。」</p>
+</div>
+<div class="relative pl-4">
+<span class="absolute -left-2.5 top-1 h-2 w-2 rounded-full bg-primary"></span>
+<h5 class="font-bold text-text-body">弱点克服と模擬試験</h5>
+<p class="text-text-muted text-sm">「間違えた問題はノートにまとめ、自分の弱点を可視化。特に苦手な分野は参考書の該当箇所を読み返し、集中的に対策しました。試験直前には模擬試験で本番さながらの環境に慣れることも重要です。」</p>
+</div>
+</div>
+</div>
+<div>
+<h4 class="flex items-center gap-3 text-lg font-bold text-primary-dark"><span class="material-symbols-outlined text-primary">local_fire_department</span>学習中の苦労とモチベーション維持</h4>
+<p class="mt-2 text-text-muted">「仕事との両立が一番大変でした。平日は通勤時間や寝る前の短い時間を活用し、休日にまとめて学習時間を確保。SNSで同じ試験を目指す仲間と繋がったり、合格後のキャリアを具体的に想像したりすることで、モチベーションを維持していました。」</p>
+</div>
+<div>
+<h4 class="flex items-center gap-3 text-lg font-bold text-primary-dark"><span class="material-symbols-outlined text-primary">flag</span>今後の資格活用と受験者へのメッセージ</h4>
+<p class="mt-2 text-text-muted">「資格取得後は、社内での発言に説得力が増し、より技術的なプロジェクトにも関われるようになりました。この試験はITキャリアの素晴らしいスタート地点です。計画的に学習すれば必ず道は拓けます。諦めずに頑張ってください！」</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24">
+<div class="container mx-auto px-4">
+<div class="mx-auto max-w-3xl text-center mb-12">
+<h2 class="text-primary-dark text-3xl font-bold tracking-tight md:text-4xl">採用企業からの声</h2>
+<p class="mt-4 text-text-muted text-lg">基本情報技術者試験の合格者は、企業でどのように評価されているのでしょうか。</p>
+</div>
+<div class="mx-auto max-w-4xl rounded-xl border border-blue-200/50 bg-white/80 p-8 shadow-lg shadow-blue-100/50 backdrop-blur-sm">
+<div class="flex flex-col-reverse items-center gap-8 md:flex-row md:items-start">
+<div class="w-full md:w-2/3">
+<h3 class="text-lg font-bold text-primary-dark">東武トップツアーズ株式会社様: 旅行業界の未来を担うDX人材への期待</h3>
+<p class="mt-4 text-text-muted">「旅行業界は今、大きな変革期を迎えています。お客様のニーズが多様化し、デジタル技術を活用した新しい旅行体験の創出、すなわちDX（デジタルトランスフォーメーション）の推進が不可欠です。私たちは、この変革をリードしてくれる人材を求めています。」</p>
+<div class="mt-6 space-y-4">
+<div>
+<h4 class="font-bold text-text-body">基本情報技術者試験合格者に期待すること</h4>
+<ul class="mt-2 list-disc list-inside space-y-2 text-text-muted">
+<li><span class="font-semibold text-text-body">IT基礎知識の共通言語化:</span> システム開発部門と事業部門が円滑に連携するための土台となります。</li>
+<li><span class="font-semibold text-text-body">学習意欲と論理的思考力:</span> 難関資格の取得は、継続的な学習意欲と物事を筋道立てて考える力の証明です。</li>
+<li><span class="font-semibold text-text-body">DX推進の即戦力/未来のリーダー:</span> 基礎知識があるからこそ、応用的な発想や新しい価値創造が可能です。将来のDXを担うリーダー候補として期待しています。</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-text-body">求める人物像</h4>
+<p class="text-text-muted">「私たちは、ITスキルはもちろんのこと、『旅行が好き』という情熱を持ち、お客様に最高の体験を提供したいという強い意志を持った方を歓迎します。基本情報技術者試験で培った知識と論理的思考力を、旅行というフィールドで存分に発揮してください。」</p>
+</div>
+</div>
+</div>
+<div class="w-full flex-shrink-0 md:w-1/3 text-center flex flex-col items-center">
+<img alt="浦山 太郎氏の顔写真" class="h-40 w-40 rounded-full object-cover shadow-md border-4 border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5NMiXFpYxbAk1u8t5nkpyuV9wFQNVc1-B3nkPM5odCXbknfv2K3kzoaCXhL6JB4VJvdSqF3wUR5aD1Rc7ZjvaSKazTLSc3Tiw1ep-g1slySh4lSxiqr2hFyZAdQQW-R6A-BzeRY339froL8Ajj6AG7zMJcBn-vtXkkTyls3U3vrxfZmnhB_QeMBV-R1zkmCfWl9YUDrhojLj7zl4crhz1BFdbpG88MPvJBCucZQq0VtUwXqrELd3VyEeu3ofRB9844WqPdsJfKmEq"/>
+<p class="mt-4 font-bold text-primary-dark">浦山 太郎 氏</p>
+<p class="text-sm text-text-muted">東武トップツアーズ株式会社<br/>執行役員 システム開発部長</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24">
+<div class="container mx-auto px-4">
+<div class="mx-auto max-w-4xl rounded-xl bg-gradient-to-r from-primary-dark to-blue-800 p-8 text-center md:p-12 shadow-2xl shadow-blue-900/40">
+<h2 class="text-white text-3xl font-bold tracking-tight">資格取得の準備はできましたか？</h2>
+<p class="mt-4 text-white/80 text-lg max-w-2xl mx-auto">ITキャリアの次のステップへ。今日、試験に登録してあなたの専門知識を証明しましょう。</p>
+<button class="mt-8 flex-none min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-white text-primary text-base font-bold tracking-wide hover:bg-blue-50 transition-all duration-300 hover:-translate-y-0.5 shadow-lg mx-auto">
+<span class="truncate">今すぐ登録</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-transparent z-10">
+<div class="container mx-auto px-4 py-8">
+<div class="border-t border-border-color/50 pt-8 flex flex-col items-center justify-between gap-4 md:flex-row">
+<div class="flex items-center gap-3">
+<div class="flex h-6 w-6 items-center justify-center rounded-md bg-primary-dark text-white">
+<svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 17.25l6-5.25-6-5.25v10.5z" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M15 12H3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<p class="text-sm text-text-muted">© 2024 基本情報技術者試験. All rights reserved.</p>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-sm text-text-muted hover:text-primary transition-colors" href="#">プライバシーポリシー</a>
+<a class="text-sm text-text-muted hover:text-primary transition-colors" href="#">お問い合わせ</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<button class="fixed bottom-6 right-6 flex h-16 items-center gap-3 rounded-full bg-primary-dark px-6 text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+<span class="material-symbols-outlined">edit_square</span>
+<span class="text-lg font-bold">今すぐ受験</span>
+</button>
+</body></html>
